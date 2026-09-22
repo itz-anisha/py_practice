@@ -1,0 +1,16 @@
+n=int(input())
+k=int(input())
+j=int(input())
+m=int(input())
+p=int(input())
+
+if k<=0 or j<=0 or n<=0 or m<0 or p<0:
+ print("INVALID")
+
+else:
+ n=n-(m//k + p//j)
+
+ if m%k!=0 or p%j!=0:
+  n=n-1
+
+print("Monkeyleft:",n)
